@@ -13,8 +13,8 @@ html body.route-home-page header > nav {
   left: 0 !important;
   right: 0 !important;
   z-index: 1000 !important;
-  background: rgba(255, 255, 255, 0.25) !important;
-  background-color: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
