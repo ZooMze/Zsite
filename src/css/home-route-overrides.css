@@ -13,12 +13,20 @@ html body.route-home-page header > nav {
   left: 0 !important;
   right: 0 !important;
   z-index: 1000 !important;
-  background: rgba(0, 0, 0, 0.25) !important;
-  background-color: rgba(0, 0, 0, 0.25) !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  background-color: rgba(255, 255, 255, 0.25) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
   box-shadow: none !important;
+}
+
+html[data-theme='dark'] body.route-home-page nav.navbar,
+html[data-theme='dark'] body.route-home-page .navbar,
+html[data-theme='dark'] body.route-home-page header > nav {
+  background: rgba(0, 0, 0, 0.25) !important;
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
 
 html body.route-home-page .navbar__inner,
@@ -31,10 +39,21 @@ html body.route-home-page .navbar__brand,
 html body.route-home-page .navbar__link,
 html body.route-home-page .navbar__toggle,
 html body.route-home-page .clean-btn {
-  color: white !important;
+  color: #1a1a1a !important;
 }
 
 html body.route-home-page .navbar__link:hover {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+html[data-theme='dark'] body.route-home-page .navbar__brand,
+html[data-theme='dark'] body.route-home-page .navbar__link,
+html[data-theme='dark'] body.route-home-page .navbar__toggle,
+html[data-theme='dark'] body.route-home-page .clean-btn {
+  color: white !important;
+}
+
+html[data-theme='dark'] body.route-home-page .navbar__link:hover {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
