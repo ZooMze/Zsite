@@ -1,0 +1,27 @@
+/**
+ * Any CSS included through custom.css is global. The classic template bundles
+ * Infima by default, and these variables customize that global theme.
+ */
+
+:root {
+  --ifm-color-primary: #667eea;
+  --ifm-color-primary-dark: #5a6fd6;
+  --ifm-color-primary-darker: #5468ca;
+  --ifm-color-primary-darkest: #4555a6;
+  --ifm-color-primary-light: #788eee;
+  --ifm-color-primary-lighter: #8398f0;
+  --ifm-color-primary-lightest: #a0b0f4;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

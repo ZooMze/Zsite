@@ -30,18 +30,18 @@
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
   color: white;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
 }
 
 .description {
   font-size: 1.3rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .scrollHint {
@@ -49,33 +49,39 @@
   bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
   animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(10px); }
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
 }
 
 /* 第一屏 - 渐变背景 */
-.section1 {
+.heroSection {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 /* 第二屏 - 另一种渐变 */
-.section2 {
+.blogSection {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
 /* 第三屏 */
-.section3 {
+.projectsSection {
   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 /* 第四屏 */
-.section4 {
+.aboutSection {
   background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
 }
 
@@ -83,6 +89,7 @@
   .title {
     font-size: 2.5rem;
   }
+
   .subtitle {
     font-size: 1.2rem;
   }

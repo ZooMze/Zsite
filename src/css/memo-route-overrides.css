@@ -1,0 +1,19 @@
+/*
+ * Memo/docs route shell overrides.
+ *
+ * Keep docs layout on Docusaurus defaults. This file only adjusts the visual
+ * treatment of the navbar for the memo route.
+ */
+
+html.docs-wrapper .navbar {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+}
+
+html.docs-wrapper[data-theme='dark'] .navbar {
+  background: rgba(24, 24, 27, 0.72);
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}

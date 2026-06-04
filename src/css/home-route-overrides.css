@@ -1,0 +1,46 @@
+/*
+ * Home route overrides for Docusaurus shell elements.
+ *
+ * The page content itself belongs in src/features/home/HomePage.module.css. These rules
+ * only touch global Docusaurus layout pieces such as the navbar wrapper.
+ */
+
+html body.route-home-page nav.navbar,
+html body.route-home-page .navbar,
+html body.route-home-page header > nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1000 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
+}
+
+html body.route-home-page .navbar__inner,
+html body.route-home-page .navbar__inner * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+html body.route-home-page .navbar__brand,
+html body.route-home-page .navbar__link,
+html body.route-home-page .navbar__toggle,
+html body.route-home-page .clean-btn {
+  color: white !important;
+}
+
+html body.route-home-page .navbar__link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+html body.route-home-page .main-wrapper,
+html body.route-home-page #__docusaurus,
+html body.route-home-page #__docusaurus > div {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}

@@ -40,11 +40,9 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: 'memoDoc',
+          routeBasePath: 'memo',
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -82,10 +80,10 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          to: '/memo/tech-plan',
+          activeBasePath: 'memo',
           position: 'left',
-          label: 'Tutorial',
+          label: '备忘文档',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -102,8 +100,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: '备忘文档',
+              to: '/memo/tech-plan',
             },
           ],
         },
