@@ -16,3 +16,30 @@ html.docs-wrapper[data-theme='dark'] .navbar {
   background: rgba(24, 24, 27, 0.72);
   border-bottom-color: rgba(255, 255, 255, 0.12);
 }
+
+/* 修复memo页面移动端菜单样式 */
+html.docs-wrapper .navbar-sidebar,
+html.docs-wrapper .navbar-sidebar__backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+html.docs-wrapper .navbar-sidebar {
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 360px !important;
+  overflow-y: auto !important;
+  z-index: 1001 !important;
+}
+
+html.docs-wrapper .navbar-sidebar__backdrop {
+  z-index: 1000 !important;
+}
+
+html.docs-wrapper .navbar-sidebar__item {
+  height: auto !important;
+  max-height: none !important;
+}

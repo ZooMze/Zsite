@@ -5,8 +5,8 @@ import Layout from '@theme/Layout';
 
 import AboutSection from './sections/AboutSection';
 import BlogSection from './sections/BlogSection';
-import HeroSection from './sections/HeroSection';
-import ProjectsSection from './sections/ProjectsSection';
+import HeroSectionNew from './sections/HeroSectionNew';
+import ProjectsSectionNew from './sections/ProjectsSectionNew';
 import styles from './HomePage.module.css';
 
 export default function HomePage(): ReactNode {
@@ -25,9 +25,9 @@ export default function HomePage(): ReactNode {
       description="Personal website"
       wrapperClassName={styles.homeWrapper}>
       <main className={styles.homeContainer}>
-        <HeroSection title={siteConfig.title} tagline={siteConfig.tagline} />
+        <HeroSectionNew title={siteConfig.title} tagline={siteConfig.tagline} />
         <BlogSection />
-        <ProjectsSection />
+        <ProjectsSectionNew />
         <AboutSection />
       </main>
     </Layout>

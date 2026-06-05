@@ -39,11 +39,11 @@ html body.route-home-page .navbar__brand,
 html body.route-home-page .navbar__link,
 html body.route-home-page .navbar__toggle,
 html body.route-home-page .clean-btn {
-  color: #1a1a1a !important;
+  color: white !important;
 }
 
 html body.route-home-page .navbar__link:hover {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 html[data-theme='dark'] body.route-home-page .navbar__brand,
@@ -62,4 +62,39 @@ html body.route-home-page #__docusaurus,
 html body.route-home-page #__docusaurus > div {
   padding-top: 0 !important;
   margin-top: 0 !important;
+}
+
+/* 修复移动端菜单展开样式 - 仅首页生效 */
+body.route-home-page .navbar-sidebar,
+body.route-home-page .navbar-sidebar__backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+body.route-home-page .navbar-sidebar {
+  right: 0 !important;
+  width: 100% !important;
+  max-width: 360px !important;
+  overflow-y: auto !important;
+  z-index: 1001 !important;
+}
+
+body.route-home-page .navbar-sidebar__backdrop {
+  z-index: 1000 !important;
+}
+
+/* 移动端菜单内部样式 - 仅首页生效 */
+body.route-home-page .navbar-sidebar__item {
+  background: rgba(15, 23, 42, 0.98) !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+body.route-home-page .navbar-sidebar .navbar__brand,
+body.route-home-page .navbar-sidebar .navbar__link,
+body.route-home-page .navbar-sidebar .menu__link {
+  color: white !important;
 }
