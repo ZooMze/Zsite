@@ -73,9 +73,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'zoomzite',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'zoomzite Logo',
         src: 'img/logo.svg',
       },
       items: [
